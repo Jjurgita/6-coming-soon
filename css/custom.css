@@ -40,7 +40,26 @@ div.container {
         }
 
 /* main */
-
+main h2 {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 20px;
+}
+main p {
+    font-size: 15px;
+    line-height: 20px;
+    color: #777;
+    margin-bottom: 20px;
+}
+    main p > a {
+        color: var(--color-scnd);
+        text-decoration: none;
+    }
+    main p > a:hover {
+        text-decoration: underline;
+    }
 /* footer */
 footer.container {
     padding-top: 0;
