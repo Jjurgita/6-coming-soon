@@ -1,12 +1,43 @@
 /* basic */
 .bg-main-color {
-    background-color: #03A9F3;
+    background-color: var(--color-main);
 }
 
 /* hero */
 div.container {
     padding-bottom: 20px;
 }
+    .hero > .short-row {
+        text-align: center;
+    }
+        .hero img {
+            margin-bottom: var(--big-space);
+            height: 35px;
+        }
+        .hero h1 {
+            display: inline-block;
+            width: 100%;
+            color: #000;
+            font-size: 50px;
+            line-height: 50px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: var(--space);
+        }
+        .hero p {
+            display: inline-block;
+            width: 100%;
+            color: #444;
+            font-size: 20px;
+            line-height: 25px;
+            margin-bottom: var(--big-space);
+        }
+        .hero .clock {
+            margin-bottom: var(--big-space);
+        }
+        .hero .subForm {
+            margin-bottom: var(--space);
+        }
 
 /* main */
 
