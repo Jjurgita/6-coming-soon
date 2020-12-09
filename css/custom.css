@@ -4,8 +4,11 @@
 }
 
 /* hero */
-div.container {
+.hero.container {
     padding-bottom: 20px;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center bottom;
 }
     .hero > .short-row {
         text-align: center;
