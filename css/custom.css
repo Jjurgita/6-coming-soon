@@ -8,7 +8,7 @@
     padding-bottom: 20px;
     background-image: url(../images/background.jpg);
     background-size: cover;
-    background-position: center bottom;
+    background-position: center;
 }
     .hero > .short-row {
         text-align: center;
@@ -21,8 +21,8 @@
             display: inline-block;
             width: 100%;
             color: #000;
-            font-size: 50px;
-            line-height: 50px;
+            font-size: 60px;
+            line-height: 60px;
             text-transform: uppercase;
             font-weight: bold;
             margin-bottom: var(--space);
