@@ -1,15 +1,68 @@
 /* basic */
 .bg-main-color {
-    background-color: #03A9F3;
+    background-color: var(--color-main);
 }
 
 /* hero */
-div.container {
+.hero.container {
     padding-bottom: 20px;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center bottom;
 }
+    .hero > .short-row {
+        text-align: center;
+    }
+        .hero img {
+            margin-bottom: var(--big-space);
+            height: 35px;
+        }
+        .hero h1 {
+            display: inline-block;
+            width: 100%;
+            color: #000;
+            font-size: 50px;
+            line-height: 50px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: var(--space);
+        }
+        .hero p {
+            display: inline-block;
+            width: 100%;
+            color: #444;
+            font-size: 20px;
+            line-height: 25px;
+            margin-bottom: var(--big-space);
+        }
+        .hero .clock {
+            margin-bottom: var(--big-space);
+        }
+        .hero .subForm {
+            margin-bottom: var(--space);
+        }
 
 /* main */
-
+main h2 {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 20px;
+}
+main p {
+    font-size: 15px;
+    line-height: 20px;
+    color: #777;
+    margin-bottom: 20px;
+}
+    main p > a {
+        color: var(--color-scnd);
+        text-decoration: none;
+    }
+    main p > a:hover {
+        text-decoration: underline;
+    }
 /* footer */
 footer.container {
     padding-top: 0;

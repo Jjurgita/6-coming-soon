@@ -1,0 +1,6 @@
+:root{
+    --space: 20px;
+    --big-space: calc(2.5 * var(--space));
+    --color-main: #03A9F3;
+    --color-scnd: #EA1E63;
+}
