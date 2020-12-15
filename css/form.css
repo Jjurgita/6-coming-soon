@@ -1,0 +1,15 @@
+.sub-form {
+    display: inline-block;
+    width: 100%;
+    color: #777;
+    margin-bottom: 20px;
+}
+    .sub-form > .email {
+        display: inline-block;
+        width: 95%;
+        margin-bottom: 30px;
+        font-size: 15px;
+        line-height: 30px;
+        border: none;
+        border-bottom: 2px solid #777;
+    }
