@@ -63,6 +63,17 @@ main p {
     main p > a:hover {
         text-decoration: underline;
     }
+
+.prog-bar.bar-1 > .bottom > .progress {
+    width: 90%;
+}
+.prog-bar.bar-2 > .bottom > .progress {
+    width: 75%;
+}
+.prog-bar.bar-3 > .bottom > .progress {
+    width: 54%;
+}
+
 /* footer */
 footer.container {
     padding-top: 0;

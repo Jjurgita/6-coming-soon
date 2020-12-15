@@ -1,0 +1,35 @@
+.prog-bar {
+    display: inline-block;
+    width: 100%;
+}
+    .prog-bar + .prog-bar {
+        margin-top: 20px;
+    }
+    .prog-bar > .top {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 15px;
+        line-height: 15px;
+        color: #777;
+    }
+        .prog-bar > .top > .label {
+            display: inline-block;
+            float: left;
+        }
+        .prog-bar > .top > .value {
+            display: inline-block;
+            float: right;
+        }
+    .prog-bar > .bottom {
+        display: inline-block;
+        width: 100%;
+        height: 8px;
+        background-color: #ccc;
+    }
+        .prog-bar > .bottom > .progress {
+            display: inline-block;
+            width: 90%;
+            height: 100%;
+            background-color: var(--color-main);
+        }
