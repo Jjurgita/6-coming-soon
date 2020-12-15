@@ -1,0 +1,14 @@
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-scnd);
+    opacity: 0.9;
+    color: #fff;
+    font-size: 18px;
+    line-height: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px #0008;
+    text-align: center;
+    border: none;
+}
