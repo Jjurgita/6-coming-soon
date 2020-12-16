@@ -1,7 +1,25 @@
+import { isValidInput } from './isValidInput.js';
+import { isValidProgressBar } from './isValidProgressBar.js';
+
 function renderProgressBar(selector, data) {
+    //input validation
+    if (!isValidInput(selector, data)) {
+        return false;
+    }
+
+    //selector - find place to add new HTML
+    const DOM = document.querySelector(selector);
+    if (!DOM) {
+        return false;
+    }
+
+    //update content
     let HTML = '';
     for (let i = 0; i < data.length; i++) {
         const progress = data[i];
+        if (!isValidProgressBar(progress)) {
+            continue;
+        }
 
         HTML += `<div class="prog-bar">
                     <div class="top">
@@ -16,9 +34,13 @@ function renderProgressBar(selector, data) {
                 </div>`;
     }
 
-    const DOM = document.querySelector(selector);
+    //post logic validation
+    if (HTML === '') {
+        return false;
+    }
+
     DOM.innerHTML += HTML;
-    console.log(HTML);
+    return true;
 }
 
 export { renderProgressBar }
