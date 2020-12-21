@@ -1,12 +1,12 @@
 .clock {
-    display: inline-block;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 30px;
 
 }
     .clock > .time {
         display: inline-block;
-        width: 25%;
-        float: left;
+        width: 100%;
         color: #fff;
     }
         .clock > .time > .value {
@@ -25,7 +25,13 @@
         }
 
 @media (max-width: 640px) {
-    .clock > .time {
-        width: 50%;
+    .clock {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 320px) {
+    .clock {
+        grid-template-columns: 1fr;
     }
 }
