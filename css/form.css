@@ -1,15 +1,25 @@
-.sub-form {
+.form {
     display: inline-block;
     width: 100%;
-    color: #777;
-    margin-bottom: 20px;
 }
-    .sub-form > .email {
+    .form > .input {
         display: inline-block;
-        width: 95%;
-        margin-bottom: 30px;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 8px 0;
         font-size: 15px;
-        line-height: 30px;
+        line-height: 22px;
+        color: #777;
         border: none;
-        border-bottom: 2px solid #777;
+        border-bottom: 1.5px solid #777;
+        outline-color: var(--color-main);
     }
+        .form > textarea.input {
+            min-height: 88px;
+            max-height: 256px;
+            resize: vertical;
+        }
+            .form > .input::placeholder {
+                color: inherit;
+            }
+
