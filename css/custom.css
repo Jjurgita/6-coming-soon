@@ -8,7 +8,7 @@
     padding-bottom: 20px;
     background-image: url(../images/background.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center bottom;
 }
     .hero > .short-row {
         text-align: center;
@@ -39,7 +39,7 @@
             margin-bottom: var(--big-space);
         }
         .hero .form {
-            margin-bottom: 0 10% var(--space);
+            margin: 0 10% var(--space);
             width: 80%;
         }
             .hero .form > .input {
@@ -112,25 +112,25 @@ footer.container {
         width: 100%;
         color: #fff9;
     }
-    footer p a {
-        color: #fff;
-        text-decoration: none;
-    }
-    footer p > span {
-        padding: 0 10px;
-        position: relative;
-    }
-    footer p > span + span::before {
-        content: '';
-        display: inline-block;
-        height: 15px;
-        width: 1px;
-        background-color: #fff;
-        position: absolute;
-        top: 50%;
-        left: -2px;
-        transform: translateY(-50%);
-    }
+        footer p a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer p > span {
+            padding: 0 10px;
+            position: relative;
+        }
+        footer p > span + span::before {
+            content: '';
+            display: inline-block;
+            height: 15px;
+            width: 1px;
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left: -2px;
+            transform: translateY(-50%);
+        }
 
 @media (max-width: 640px) {
     footer p > span {
@@ -140,13 +140,13 @@ footer.container {
         footer p > span + span::before {
             display: none;
         }
-    .hero .form {
+    .hero > .form {
         width: 100%;
         margin: 0 0 var(--space);
     }    
 }
 
- @media (max-width: 1200px) {
+ @media (min-width: 1200px) {
     main .form > input.input {
         width: 47%;
         float: left;
